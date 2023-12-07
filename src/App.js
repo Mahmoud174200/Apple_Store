@@ -4,7 +4,8 @@ import Home from './pages/home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
-import './css/Home.css'
+import './css/Home.css';
+import './css/SignInAndSignUp.css';
 import axios from 'axios';
 import { BrowserRouter ,Routes,Route } from 'react-router-dom';
 function App() {
