@@ -52,7 +52,7 @@
     padding-left: 10px;
     position: relative;left: 50px;
   }
-  .Sign h2,h3,p,b,a{
+  .Sign h2,.Sign h3,.Sign p,.Sign b,.Sign a{
     color: #021870;
   }
   .Sign h2{
@@ -121,7 +121,7 @@
     padding-left: 10px; 
     position: relative;left: 50px;
   }
-  .SignUp h2,h3,p,b,a{
+  .SignUp h2,.SignUp h3,.SignUp p,.SignUp b,.SignUp a{
     color: #021870;
   }
   .SignUp h2{
@@ -193,7 +193,7 @@
       padding-left: 10px; 
       position: relative;left: 30px;
     }
-    .centerForgot h2,h3,p,b,a{
+    .centerForgot h2,.centerForgot h3,.centerForgot p,.centerForgot b,.centerForgot a{
       color: #021870;
     }
     .centerForgot h2{
