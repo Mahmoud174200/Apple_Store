@@ -1,10 +1,14 @@
 import React from "react";
-import Mlwany from "../assets/AboutUS/single-image3.jpg"
-import Mlwany1 from "./assets/AboutUS/insta-item1.jpg"
-import Mlwany2 from "./assets/AboutUS/insta-item2.jpg"
-import Mlwany3 from "./assets/AboutUS/insta-item3.jpg"
-import Mlwany4 from "./assets/AboutUS/insta-item4.jpg"
-import Mlwany5 from "./assets/AboutUS/insta-item5.jpg"
+import Mlwany from "../assets/AboutUs/single-image3.jpg"
+import Mlwany1 from "../assets/AboutUs/insta-item1.jpg"
+import Mlwany2 from "../assets/AboutUs/insta-item2.jpg"
+import Mlwany3 from "../assets/AboutUs/insta-item3.jpg"
+import Mlwany4 from "../assets/AboutUs/insta-item4.jpg"
+import Mlwany5 from "../assets/AboutUs/insta-item5.jpg"
+import '../css/AboutUs.css'
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -51,13 +55,13 @@ Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas od
  </div>
         </div>
         <section class="form">
-            <div class="container" placeholder="Your Emaill Adress">
+            <div class="container" >
                 <form>
                     <div className="leftForm">
                         <h1>SUBSCRIBE US NOW</h1>
                         <p>Get latest news, updates and deals directly mailed to your inbox.</p>                    </div>
                     <div className="email">
-                        <input type="email"/>
+                        <input type="email" placeholder="Your Emaill Adress"/>
                         <button>Subscripe</button>
                     </div>
                 </form>
