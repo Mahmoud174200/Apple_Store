@@ -1,20 +1,73 @@
-import React from "react";
+import React, { useState } from "react"
 import Mlwany from "../assets/AboutUs/single-image3.jpg"
 import Mlwany1 from "../assets/AboutUs/insta-item1.jpg"
 import Mlwany2 from "../assets/AboutUs/insta-item2.jpg"
 import Mlwany3 from "../assets/AboutUs/insta-item3.jpg"
 import Mlwany4 from "../assets/AboutUs/insta-item4.jpg"
 import Mlwany5 from "../assets/AboutUs/insta-item5.jpg"
+import logo from "../assets/home/main-logo.png"
+
 import '../css/AboutUs.css'
+import { Link } from "react-router-dom"
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const AboutUS =()=>{
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    }
+
     return(
+        <>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="logo">
+                        <img className="logo" src={logo}/>
+                    </div>
+                    <div className={`menu1 ${isMenuOpen ? 'open' : ''}`}>
+                        <ul> <i className={`fa-solid fa-xmark ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></i>
+
+
+                        <li><a><Link className="link" to={"/"}>Home</Link></a></li>
+                            <li><a src="#">Services</a></li>
+                            <li><a src="#">Products</a></li>
+                            <li><a src="#">Watches</a></li>
+                            <li><a><Link className="link" to={"/AboutUs"}>About Us</Link></a></li>
+                            <li><a>Cart</a></li>
+                            <li><a>Check Out</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>   
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a><Link className="link" to={"/"}>Home</Link></a></li>
+                            <li><a src="#">Services</a></li>
+                            <li><a src="#">Products</a></li>
+                            <li><a src="#">Watches</a></li>
+                            <li><a><Link className="link" to={"/AboutUs"}>About Us</Link></a></li>
+                            <li><a>Cart</a></li>
+                            <li><a>Check Out</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>   
+                    </div>
+                    <div className="icon">
+                    <i className="fa-solid fa-bars bars" onClick={toggleMenu}></i>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <a><Link className="link" to={"/signin"}><i class="fa-solid fa-user"></i></Link></a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
         <div class="head">
         <div class="header">
             <div class="title">
@@ -76,6 +129,7 @@ Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas od
             <div class="sub5"><a><img src={Mlwany5}/></a></div>
             </div>
         </div>
+        </>
         
     );
 }

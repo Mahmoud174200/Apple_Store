@@ -30,11 +30,11 @@ const Home = () => {
                         <ul> <i className={`fa-solid fa-xmark ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></i>
 
 
-                            <li><a src="#">Home</a></li>
+                            <li><a><Link className="link" to={"/"}>Home</Link></a></li>
                             <li><a src="#">Services</a></li>
                             <li><a src="#">Products</a></li>
                             <li><a src="#">Watches</a></li>
-                            <li><a>about</a></li>
+                            <li><a><Link className="link" to={"/AboutUs"}>About Us</Link></a></li>
                             <li><a>Cart</a></li>
                             <li><a>Check Out</a></li>
                             <li><a>Contact</a></li>
@@ -42,11 +42,11 @@ const Home = () => {
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><a src="#">Home</a></li>
+                            <li><a><Link className="link" to={"/"}>Home</Link></a></li>
                             <li><a src="#">Services</a></li>
                             <li><a src="#">Products</a></li>
                             <li><a src="#">Watches</a></li>
-                            <li><a>about</a></li>
+                            <li><a><Link className="link" to={"/AboutUs"}>About Us</Link></a></li>
                             <li><a>Cart</a></li>
                             <li><a>Check Out</a></li>
                             <li><a>Contact</a></li>
@@ -55,7 +55,7 @@ const Home = () => {
                     <div className="icon">
                     <i className="fa-solid fa-bars bars" onClick={toggleMenu}></i>
                         <i className="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-user"></i>
+                        <a><Link className="link" to={"/signin"}><i class="fa-solid fa-user"></i></Link></a>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                 </nav>
