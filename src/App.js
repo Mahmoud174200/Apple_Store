@@ -10,6 +10,7 @@ import axios from 'axios';
 import { BrowserRouter ,Routes,Route } from 'react-router-dom';
 import AboutUS from './pages/AboutUs';
 import Shop from './pages/Shop';
+import App01 from './pages/App01';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <BrowserRouter>
         <Routes>
         <Route path="/signin" element={<SignIn/>} />
+        <Route path="/App01" element={<App01/>} />
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/forgot" element={<ForgotPassword/>} />
       <Route path="/AboutUs" element={<AboutUS/>} />
