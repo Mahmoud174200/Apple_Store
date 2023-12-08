@@ -9,6 +9,7 @@ import './css/Home.css';
 import axios from 'axios';
 import { BrowserRouter ,Routes,Route } from 'react-router-dom';
 import AboutUS from './pages/AboutUs';
+import Shop from './pages/Shop';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/forgot" element={<ForgotPassword/>} />
       <Route path="/AboutUs" element={<AboutUS/>} />
+      <Route path="/Shop" element={<Shop/>} />
          <Route path='/' element={<Home/>}/>
           <Route path='/*' element={<Error/>}/>
         </Routes>
