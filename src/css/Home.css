@@ -11,7 +11,7 @@
   }
   body {
     font-family: "Work Sans", sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
 
 .container{
@@ -71,6 +71,7 @@ header .container nav{
 }
 .goal .container .section1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .main {
@@ -78,11 +79,11 @@ header .container nav{
     height: 541px;
     margin-bottom: 100px;
 }
-.main .title {
+.main .hometitle {
     width: 65%;
     padding-top: 180px;
 }
-.main .title p{
+.main .hometitle p{
     font-size: 3em;
 }
 .main .banner img{
@@ -91,7 +92,7 @@ header .container nav{
     top :-11px;
     
 }
-.main .title button{
+.main .hometitle button{
     font-size: 1.5em;
     padding: 15px;
     background-color: black;
@@ -126,12 +127,19 @@ header .container nav{
  .products .title1 h1{
     font-size: 2em;
  }
+ .flexproduct {display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
  .products .producti img {
     margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
  }
  .products .producti {
-    width: 310px;
+    width: 20%px;
     height: 418;
+    margin: 50px;
  }
  .producti span {
     padding-left: 100px;

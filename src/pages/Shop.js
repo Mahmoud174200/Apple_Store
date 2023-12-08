@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../css/Shop.css';
 import product1 from "../assets/AboutUs/product-item1.jpg"
 import Mlwany1 from "../assets/AboutUs/insta-item1.jpg"
@@ -6,11 +6,27 @@ import Mlwany2 from "../assets/AboutUs/insta-item2.jpg"
 import Mlwany3 from "../assets/AboutUs/insta-item3.jpg"
 import Mlwany4 from "../assets/AboutUs/insta-item4.jpg"
 import Mlwany5 from "../assets/AboutUs/insta-item5.jpg"
+import axios from "axios";
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Shop =()=>{
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+          try {
+            const response = await axios.get('/api/v1/products'); // Update with your API endpoint
+            setProducts(response.data.data);
+          } catch (error) {
+            console.error('Error fetching products:', error);
+          }
+        };
+    
+        fetchProducts();
+      }, []);
+
     return(
         <>
         <div class="head">
@@ -22,9 +38,7 @@ const Shop =()=>{
         </div>
         <div class="Section1">
             <h2> Showing 1-9 of 55 results</h2>
-            <div class="Product1"><img src={product1}/><div class="title"><h3><a>IPHONE 10</a></h3> <h2>980$</h2>
-            <button> ADD TO CART </button>
-            </div></div>
+            
         </div>
         <div class="Section2">
             <div class="search">
@@ -60,6 +74,17 @@ const Shop =()=>{
 
         </div>
         
+        </div>
+        <div className="flexproduct">
+                {products.map((product, index) => (
+            <div key={index} className="producti">
+              <img src={product.image} alt={`Product ${index}`} />
+              <h3>
+                {product.name} <span>{product.price}</span>
+              </h3>
+            </div>
+                      ))}
+
         </div>
         <section class="form">
             <div class="container" placeholder="Your Emaill Adress">

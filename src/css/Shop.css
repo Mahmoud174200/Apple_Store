@@ -10,9 +10,16 @@
   }
   body {
     font-family: "Work Sans", sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
-
+  .flexproduct {display: flex;
+   flex-wrap: wrap;
+   }
+    .flexproduct .producti img {
+       margin-bottom: 20px;
+       width: 200px;
+       height: 200px;
+    }
 .container{
     padding-left: 15px; ;
     padding-right: 15px;

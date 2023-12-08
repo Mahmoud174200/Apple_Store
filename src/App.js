@@ -7,10 +7,13 @@ import ForgotPassword from './pages/ForgotPassword';
 import './css/Home.css';
 // import './css/SignInAndSignUp.css';
 import axios from 'axios';
-import { BrowserRouter ,Routes,Route } from 'react-router-dom';
+import { BrowserRouter ,Routes,Route,useState } from 'react-router-dom';
+
 import AboutUS from './pages/AboutUs';
 import Shop from './pages/Shop';
 import App01 from './pages/App01';
+import AdminDashboard from './pages/admin_dashboard';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,7 @@ function App() {
         <BrowserRouter>
         <Routes>
         <Route path="/signin" element={<SignIn/>} />
+        <Route path="/admin_dashboard" element={<AdminDashboard/>} />
         <Route path="/App01" element={<App01/>} />
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/forgot" element={<ForgotPassword/>} />

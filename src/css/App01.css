@@ -1,8 +1,8 @@
-*{
+/* *{
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
+} */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -370,7 +370,8 @@ font: 1.3em sans-serif;
       margin-left: 5%;
       height: 300px;
       justify-content: center;
-      margin-top: 70px;margin-left: 15%;
+      margin-top: 70px;
+      /* margin-left: 15%; */
 
    }
   .section1 .sub1{ width: 220px; height: 250px;  float: left;  margin-right: 150px;}
@@ -400,8 +401,6 @@ font: 1.3em sans-serif;
 
   .section1{
       width: 90%;
-      margin-left: 10%;
-      height: 150px;
       justify-content: center;
       margin-top: 70px;
    }

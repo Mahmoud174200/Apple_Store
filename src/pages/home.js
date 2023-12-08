@@ -1,23 +1,36 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react";
 import logo from "../assets/home/main-logo.png"
 import product from "../assets/home/product-item1.jpg"
 import banner from "../assets/home/banner-image.png"
 import sale from "../assets/home/single-image1.png"
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import axios from "axios";
 
 
-import '../css/Home.css'
+import  '../css/Home.css'
 import { Link } from "react-router-dom"
 const Home = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
+    const [products, setProducts] = useState([]);
 
     const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
+      setMenuOpen(!isMenuOpen);
     };
-    // const {isOpen , setIsOpen}= useState(false);
-    // const toogleMenu = () => {
-    //     setIsOpen((open)=> !open);
-    // };
+  
+    useEffect(() => {
+      const fetchProducts = async () => {
+        try {
+          const response = await axios.get('/api/v1/products'); // Update with your API endpoint
+          setProducts(response.data.data);
+        } catch (error) {
+          console.error('Error fetching products:', error);
+        }
+      };
+  
+      fetchProducts();
+    }, []);
+
     return(
         <>
         <header>
@@ -63,7 +76,7 @@ const Home = () => {
         </header>
         <section class="main">
             <div class="container">
-                <div className="title">
+                <div className="hometitle">
                     <p>YOUR PRODUCTS ARE GREAT</p>
                     <button>
                         <a>Shop Product</a>
@@ -102,18 +115,33 @@ const Home = () => {
                     <h1>Mobile Products</h1>
                     <h5><a>Go To Shop</a></h5>
                 </div>
-                <div className="producti">
-                    <img src={product}></img>
-                    <h3>Product Name    <span>price</span></h3>
-                </div>
+                <div className="flexproduct">
+                {products.map((product, index) => (
+            <div key={index} className="producti">
+              <img src={product.image} alt={`Product ${index}`} />
+              <h3>
+                {product.name} <span>{product.price}</span>
+              </h3>
+            </div>
+                      ))}
+
+        </div>
+
                 <div className="title1">
                     <h1>Smart Wathes</h1>
                     <h5><a>Go To Shop</a></h5>
                 </div>
-                <div className="producti">
-                    <img src={product}></img>
-                    <h3>Product Name    <span>price</span></h3>
-                </div>
+                <div className="flexproduct">
+                {products.map((product, index) => (
+            <div key={index} className="producti">
+              <img src={product.image} alt={`Product ${index}`} />
+              <h3>
+                {product.name} <span>{product.price}</span>
+              </h3>
+            </div>
+                      ))}
+
+        </div>
             </div>
         </section>
         <section className="sale">
