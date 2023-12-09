@@ -27,7 +27,7 @@ body {
   margin: 0px;
 }
 
-.head{
+.headApp01{
   background-color: #edf1f3;
   height: 300px;
   text-align: center;
@@ -35,26 +35,30 @@ body {
   padding: 0px;
   
 }
-.head h2{
+.headApp01 h2{
   font-size: 5em;
   font-weight: 100;
 }
-.head .text{
+.headApp01 .text{
   position: relative;top: 100px;
 }
-.leftSec{
-  width: 40vw;
+.leftSecContact{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
   float: left;
+  overflow: hidden;
 }
 .img{
   width: 50%;
   float: left;
 }
-.sec2{
+.sec2Contact{
   margin-top: 50px;
   margin-left: 60px;
+  display: flex;
 }
-.sec2 h2{
+.sec2Contact h2{
   margin: 20px 0px;
   font-size: 2em;
   font-weight: 100;
@@ -62,41 +66,44 @@ body {
 .title{
   color: rgb(182, 182, 182);
 }
-.firstSec{
-width: 320px;
+.firstSecContact{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+width: 400px;
 }
-.firstSec h3{
+.firstSecContact h3{
   font-size: 1.5em;
   font-weight: 100;
   text-decoration: underline;
   margin: 20px 0px;
 }
-.Address{
+.AddressContact{
   color: rgb(182, 182, 182);
   font-size: 1.1em;
   width: 300px;
 }
-.phone{
+.phoneContact{
   margin: 20px 0px;
   font-size: 1.1em;
 }
-.secondSec{
-  position: relative;left: 400px; bottom: 250px;
+.secondSecContact{
+  overflow: hidden;
   width: 320px;
 }
 
-  .secondSec h3{
+  .secondSecContact h3{
     font-size: 1.5em;
     font-weight: 100;
     text-decoration: underline;
     margin: 20px 0px;
   }
-  .rightSec{
+  .rightSecContact{
     float: right;
-    width: 50%;
-    position: relative;bottom: 100px;
+    width: 50vw;
   }
-  .firstLine{
+  .firstLineContact{
     position: relative;right: 10px;
     width:300px;
     height: 35px;
@@ -104,8 +111,9 @@ width: 320px;
     padding-left: 20px;
     border: 1px solid black;
     margin: 20px 10px;
+  overflow: hidden;
   }
-  .PhoneNumber{
+  .PhoneNumberContact{
     width: 620px;
     height: 35px;
     border-radius: 10px;
@@ -113,7 +121,7 @@ width: 320px;
     border: 1px solid black;
     margin-bottom: 10px;
   }
-  .Subject{
+  .SubjectContact{
     width: 620px;
     height: 35px;
     border-radius: 10px;
@@ -121,7 +129,7 @@ width: 320px;
     border: 1px solid black;
     margin-bottom: 10px;
   }
-  .Message{
+  .MessageContact{
     width: 620px;
     height: 150px;
     border-radius: 10px;
@@ -130,7 +138,7 @@ width: 320px;
     margin-bottom: 10px;
     padding-bottom: 100px;
   }
-  .Submit{
+  .SubmitContact{
     width: 170px;
     height: 50px;
     background-color: #1c1f23;
@@ -138,18 +146,19 @@ width: 320px;
     font-size: 1.2em;
     border: none;
   }
-  .sec3{
+  .sec3Contact{
     margin-left: 60px;
+  overflow: hidden;
   }
-  .sec3 img{
+  .sec3Contact img{
     float: left;
   }
-  .Parag{
+  .ParagContact{
     padding-top: 50px;
     float: right;
     margin-right: 100px;
   }
-  .Parag h2{ 
+  .ParagContact h2{ 
     font-size: 2em;
     font-weight: 100;
     margin-bottom: 20px;
@@ -157,17 +166,17 @@ width: 320px;
     padding-right: 100px;
   }
 
-  .form{
-    width: 90%;
+  .formContact{
+    width: 100%;
     height: 220px;
     margin-left: 5%; padding-top: 15px; padding-left: 15px; margin-bottom: 30px;
-    
+    display: flex;
   overflow: hidden;
 }
-.form .container {
+.formContact .container {
     background-color: #323030;
  }
- .form form {
+ .formContact form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,17 +184,18 @@ width: 320px;
     padding-top: 0px;
     padding-bottom: 100px;
     margin-top: 55px;
+    
 }
-.form form h1 , .form form p{
+.formContact form h1 , .form form p{
     color: white;
     padding: 15px;
 }
-.form form input {
+.formContact form input {
     width: 300px;
     height: 40px;
     border-radius: 10px 0 0 10px;
 }
-.form form button {
+.formContact form button {
     width: 100px;
     height: 38px;
     border-radius: 0 10px 10px 0;
@@ -197,26 +207,26 @@ width: 320px;
     width: 90%;height: 400px; margin-left: 8%; padding-top: 60px;
   overflow: hidden;
 }
-.section4 h1{
+.section4Contact h1{
     text-align: center;font-weight: lighter;font-size: 3.0em;
 }
-.section4 .sub1{ width: 220px; height: 280px;margin: 10px; float: left; margin-left: 20px;  overflow: hidden;}
-.section4 .sub1 img{width: 220px; height: 280px;}
+.section4Contact .sub1{ width: 220px; height: 280px;margin: 10px; float: left; margin-left: 20px;  overflow: hidden;}
+.section4Contact .sub1 img{width: 220px; height: 280px;}
 
 
-.section4 .sub2{width: 220px; height: 280px; margin: 10px; float: left;overflow: hidden;}
-.section4 .sub2 img{width: 220px; height: 280px;}
+.section4Contact .sub2{width: 220px; height: 280px; margin: 10px; float: left;overflow: hidden;}
+.section4Contact .sub2 img{width: 220px; height: 280px; }
 
 
-.section4 .sub3{width: 220px; height: 280px; margin: 10px; float: left;
+.section4Contact .sub3{width: 220px; height: 280px; margin: 10px; float: left;
   overflow: hidden;
 }
-.section4 .sub3 img{width: 220px; height: 280px;}
-.section4 .sub4{width: 220px; height: 280px; margin: 10px; float: left;
+.section4Contact .sub3 img{width: 220px; height: 280px;}
+.section4Contact .sub4{width: 220px; height: 280px; margin: 10px; float: left;
   overflow: hidden;
 }
-.section4 .sub4 img{width: 220px; height: 280px;}
-.section4 .sub5{width: 220px; height: 280px; margin: 10px; float: left;
+.section4Contact.sub4 img{width: 220px; height: 280px;}
+.section4Contact .sub5{width: 220px; height: 280px; margin: 10px; float: left;
   overflow: hidden;
 }
 .section4 .sub5 img{width: 220px; height: 280px;}
@@ -370,8 +380,7 @@ font: 1.3em sans-serif;
       margin-left: 5%;
       height: 300px;
       justify-content: center;
-      margin-top: 70px;
-      /* margin-left: 15%; */
+      margin-top: 70px;margin-left: 15%;
 
    }
   .section1 .sub1{ width: 220px; height: 250px;  float: left;  margin-right: 150px;}
@@ -401,6 +410,8 @@ font: 1.3em sans-serif;
 
   .section1{
       width: 90%;
+      margin-left: 10%;
+      height: 150px;
       justify-content: center;
       margin-top: 70px;
    }
@@ -681,6 +692,6 @@ text-align: center;font-weight: lighter;font-size: 3.0em;
 .section4 .sub4{width: 120px; height: 180px; margin: 10px; margin-left: 150px; float: left;}
 .section4 .sub4 img{width: 120px; height: 180px;position: relative; right: -59px; top: -200px;}
 .section4 .sub5{width: 120px; height: 180px; margin: 10px; float: left;}
-.section4 .sub5 img{width: 120px; height: 180px;position: relative; right: -99px; top:-190px;}
+.section4 .sub5 img{width: 120px; height: 180px;position: relative; right: -99px; top:-190px;}
 
 }

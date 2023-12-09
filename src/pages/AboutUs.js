@@ -35,6 +35,7 @@ const AboutUS =()=>{
                         <ul> <i className={`fa-solid fa-xmark ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></i>
 
 
+
                         <li><a><Link className="link" to={"/"}>Home</Link></a></li>
                             <li><a src="#">Services</a></li>
                             <li><a src="#">Products</a></li>
@@ -68,14 +69,14 @@ const AboutUS =()=>{
         </header>
 
 
-        <div class="head">
-        <div class="header">
+        <div class="headAboutUs">
+        <div class="headerAboutUs">
             <div class="title">
             <h1>About Us</h1>
-            <h6><a>Home</a> &#62; About Us </h6>
+            <h6 ><Link to={"/"} className="linn"><a>Home</a></Link> &#62; About Us </h6>
             </div>
         </div>
-        <div class="section1">
+        <div class="section1AboutUs">
             <div class="sub1">
             <h2> &#9872; QUALITY GUARANTEE</h2>
 <h4>Consectetur adipi elit lorem ipsum dolor sit amet.</h4>
@@ -94,7 +95,7 @@ const AboutUS =()=>{
             </div>
 
         </div>
-        <div class="section2">
+        <div class="section2AboutUs">
             <div class="image">
             <img src={Mlwany}/>
             </div>
@@ -107,7 +108,7 @@ Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas od
         <button> Shop Our Store </button>
  </div>
         </div>
-        <section class="form">
+        <section class="formAboutUs">
             <div class="container" >
                 <form>
                     <div className="leftForm">
@@ -120,7 +121,7 @@ Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas od
                 </form>
             </div>
         </section>
-            <div class="section4">
+            <div class="section4AboutUs">
             <h1>Shop Our Insta</h1>
             <div class="sub1"><a><img src={Mlwany1}/></a></div>
             <div class="sub2"><a><img src={Mlwany2}/></a></div>
@@ -129,6 +130,48 @@ Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas od
             <div class="sub5"><a><img src={Mlwany5}/></a></div>
             </div>
         </div>
+        <footer>
+            <div className="container">
+                
+                <div className="left boxsize">
+                    <img src={logo}></img>
+                    <p>Nisi, purus vitae, ultrices nunc. <br></br>hSit ac sit suscipit endrerit.<br></br> Gravida massa volutpat aenean <br></br>hodio erat nullam fringilla.</p>
+                </div>
+                <div className="left1 boxsize">
+                    <ul><h3>Quick Links</h3>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+                <div className="right1 boxsize">
+                <ul><h3>Help And Info</h3>
+                        <li><a>Chechout</a></li>
+                        <li><a>Cart</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </div>
+                <div className="right boxsize">
+                    <h3>Contact Us</h3>
+                    <h4>Do you have any queries or suggestions? </h4>
+                    <h4><a href="mailto:">yourinfo@gmail.com</a></h4>
+                    <h4>If you need support? Just give us a call. </h4>
+                    <h4><a href="">+55 111 222 333 44</a></h4>
+                </div>
+                
+            </div>
+            <hr></hr>
+            <div className="container">
+                
+                <div className="footer2">
+                    <p>
+                        design by team cs309
+                    </p>
+                </div>
+            </div>
+        </footer>
         </>
         
     );
