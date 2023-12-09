@@ -19,21 +19,22 @@ const DeleteProduct=()=>{
   };
     return(
         <div className="BackGround">
+          <form onSubmit={handleDelete}>
+
+<label htmlFor="product_id">Product ID:</label>
+<input
+  type="text"
+  id="product_id"
+  name="product_id"
+  value={id}
+  onChange={(e) => setId(e.target.value)}
+  required
+/>
+        <input type="submit" value="Delete" />
+
+</form>
         <aside className="sideBar">
-        <form onSubmit={handleDelete}>
-
-        <label htmlFor="product_id">Product ID:</label>
-        <input
-          type="text"
-          id="product_id"
-          name="product_id"
-          value={id}
-          onChange={(e) => setId(e.target.value)}
-          required
-        />
-                <input type="submit" value="Delete" />
-
-        </form>
+        
         <div
             className="link">
             <Link className="Links" to={'/'}>DashBoard</Link>
@@ -42,15 +43,15 @@ const DeleteProduct=()=>{
             
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editUser'}>Add Item Product</Link>
+            <Link className="Links" to={'addproduct'}>Add Item Product</Link>
             </div>
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editProduct'}>Update Item Product</Link>
+            <Link className="Links" to={'editproduct'}>Update Item Product</Link>
             </div>
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editProduct'}>Delete Item Product</Link>
+            <Link className="Links" to={'deleteproduct'}>Delete Item Product</Link>
             </div>
         </aside>
         </div>

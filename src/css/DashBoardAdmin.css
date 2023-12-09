@@ -32,10 +32,10 @@
 .sideBar{
   border: 1px solid grey    ;
 
-width: 300px;
-height: 380px;
+  width: 377px;
+  height: 380px;
 float: left;
-position: fixed;top: 300px;
+position: fixed;top: 20%;
 background: rgb(89,95,96);
 background: linear-gradient(90deg, rgba(89,95,96,0.8) 5%, rgba(43,50,62,0.8) 45%, rgba(3,2,22,0.8) 100%);
 padding-top: 20px;
