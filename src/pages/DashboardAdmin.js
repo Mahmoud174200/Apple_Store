@@ -13,15 +13,15 @@ const DashboardAdmin=()=>{
             
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editUser'}>Add Item Product</Link>
+            <Link className="Links" to={'addproduct'}>Add Item Product</Link>
             </div>
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editProduct'}>Update Item Product</Link>
+            <Link className="Links" to={'editproduct'}>Update Item Product</Link>
             </div>
             <hr/>
             <div className="link">
-            <Link className="Links" to={'editProduct'}>Delete Item Product</Link>
+            <Link className="Links" to={'deleteproduct'}>Delete Item Product</Link>
             </div>
         </aside>
         </div>
