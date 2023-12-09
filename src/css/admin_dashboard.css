@@ -106,3 +106,20 @@
          background-color: blueviolet;
          font-size: 1.3em;
    }
+.BackGround {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.BackGround form {
+    margin: 40px;
+} 
+   #product_name ,#product_price{
+    width: 200px ;
+    background-color: #fff;
+    padding: 2px;
+   }
+   .BackGround label {
+    color: white;
+   }
