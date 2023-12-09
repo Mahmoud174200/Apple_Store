@@ -1,7 +1,10 @@
 import React from "react";
 import '../css/admin_dashboard.css';
+import { useLocation } from "react-router-dom";
 
 const DBUser =()=>{
+    const location = useLocation();
+    const user = location.state.user;
     return(
         <>
         <div className="con">
@@ -11,17 +14,21 @@ const DBUser =()=>{
       </div>
       <hr/>
         <div className="user_Name">
-            <h3> User name : Sample</h3>
+            <h3> User name : {user.name}</h3>
             <button>Edit User Name</button>
         </div>
         <hr/>
-        <div className="Mobile">
-            <h3> Mobile_Number : Sample</h3>
-            <button>Edit Mobile Number</button>
-        </div>
+
         <hr/>
+        <div className="Mobile">
+
+        <h3> Mobile_Number : {user.email}</h3>
+            <button>Edit Mobile Number</button>
+            </div>
+
+            <hr/>
         <div className="Change_Password">
-            <h3> Current Password : Sample</h3>
+            <h3> Current Password : {user.password}</h3>
             <button>Change Password</button>
         </div>
         </div>
