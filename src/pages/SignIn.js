@@ -19,29 +19,26 @@ const SignIn = () => {
 
             if (response.status === 200) {
                 setError(null);
-                navigate('/admin_dashboard');
+                navigate('/admin_dashboard', { state: { user: response.data.user } });
             } else {
                 setError(response.data.message || 'Login failed');
             }
         } catch (error) {
             console.error('Error during login:', error);
+            setError('Login failed. Please check your credentials.');
         }
     };
 
     return (
         <div className="Sign">
             <div className="center">
-                {error ? (
-                    <h2>{error}</h2>
-                ) : (
+                {error && <h1 className="error-message">{error}</h1>}
+                {!error && (
                     <>
                         <h2>Welcome Back !</h2>
                         <h3 className="headText">Sign In</h3>
-
-
                     </>
                 )}
-                {error && <p className="error-message">{error}</p>}
                 <div className="Email">
                     <h3 className="EmailHeader">Email</h3>
                     <input
